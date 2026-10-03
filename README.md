@@ -54,7 +54,8 @@ crop_capstone/
 │   ├── crop_model.joblib       # Trained pipeline (impute -> scale -> model)
 │   └── metadata.json           # Classes, feature ranges, model info
 ├── notebooks/
-│   └── crop_suitability.ipynb  # Notebook version of the analysis
+│   ├── crop_suitability.ipynb  # Notebook version of the analysis (data, EDA, models, evaluation)
+│   └── colab_run.ipynb         # Colab runner (runs the scripts and shows results) 
 ├── reports/
 │   ├── figures/                # EDA and evaluation charts
 │   ├── metrics.json            # All metrics
