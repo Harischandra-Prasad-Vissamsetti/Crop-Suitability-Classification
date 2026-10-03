@@ -247,3 +247,7 @@ Live weather API integration, CSV batch predictions, ensemble models (Random For
 Educational capstone project. The dataset belongs to its original author on Kaggle; check its license before redistributing the raw file.
 
 © 2026 Harischandra Prasad Vissamsetti, M.C.A
+
+
+
+# ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white) ![Google Colab](https://img.shields.io/badge/Google%20Colab-Supported-F9AB00?logo=googlecolab&logoColor=white) ![VS Code](https://img.shields.io/badge/VS%20Code-Supported-007ACC?logo=visualstudiocode&logoColor=white)
