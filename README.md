@@ -2,8 +2,9 @@
 
 A multi-class machine-learning project that predicts the most suitable crop (22 classes) from soil nutrients, soil pH and climatic conditions, with an interactive Streamlit web application.
 
-**Author:** Harischandra Prasad Vissamsetti, M.C.A
-**Program:** Final Capstone Project (Track 1s)
+**Author:**        Harischandra Prasad Vissamsetti, M.C.A
+**Program:**       Final Capstone Project (Track-1)
+**Project Name:**  Crop Suitability Classification System
 
 ---
 
