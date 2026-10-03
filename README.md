@@ -96,8 +96,8 @@ Charts and per-crop details are in `reports/`.
 
 **1. Get the project**
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone  https://github.com/Harischandra-Prasad-Vissamsetti/Crop-Suitability-Classification.git
+cd <Crop-Suitability-Classification>
 ```
 Open the folder in VS Code (**File → Open Folder**). It must be the project root.
 
@@ -144,8 +144,8 @@ Open http://localhost:8501 if the browser does not open automatically.
 **2. Get the project** (choose one)
 ```python
 # Option A: clone from GitHub
-!git clone https://github.com/<your-username>/<your-repo>.git
-%cd <your-repo>
+!git clone https://github.com/Harischandra-Prasad-Vissamsetti/Crop-Suitability-Classification.git
+%cd <Crop-Suitability-Classification>
 ```
 or upload `crop_capstone.zip` using the Files panel and run:
 ```python
