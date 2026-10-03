@@ -1,0 +1,47 @@
+{
+  "selected_model": "Logistic Regression",
+  "features": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "classes": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "feature_medians": {
+    "N": 31.0,
+    "P": 49.0,
+    "K": 31.0,
+    "temperature": 25.44,
+    "humidity": 77.22,
+    "ph": 6.4,
+    "rainfall": 93.56
+  },
+  "train_rows": 1760,
+  "test_rows": 440
+}
