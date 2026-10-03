@@ -1,0 +1,26 @@
+Raw shape: (2200, 8)
+Duplicate rows: 0
+Missing values per column:
+N              0
+P              0
+K              0
+temperature    0
+humidity       0
+ph             0
+rainfall       0
+label          0
+Out-of-range (impossible) values: {'N': 0, 'P': 0, 'K': 0, 'temperature': 0, 'humidity': 0, 'ph': 0, 'rainfall': 0}
+Describe (raw):
+             N        P        K  temperature  humidity       ph  rainfall
+count  2200.00  2200.00  2200.00      2200.00   2200.00  2200.00   2200.00
+mean     50.55    53.36    48.15        25.62     71.48     6.47    103.46
+std      36.92    32.99    50.65         5.06     22.26     0.77     54.96
+min       0.00     5.00     5.00         8.83     14.26     3.50     20.21
+25%      21.00    28.00    20.00        22.77     60.26     5.97     64.55
+50%      37.00    51.00    32.00        25.60     80.47     6.43     94.87
+75%      84.25    68.00    49.00        28.56     89.95     6.92    124.27
+max     140.00   145.00   205.00        43.68     99.98     9.94    298.56
+
+After cleaning shape: (2200, 8)
+Class balance: min=100, max=100, n_classes=22
+Max |corr| between features: ('P', 'K') = 0.74

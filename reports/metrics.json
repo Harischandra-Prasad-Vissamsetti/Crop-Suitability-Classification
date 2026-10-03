@@ -1,0 +1,76 @@
+{
+  "results": {
+    "Logistic Regression": {
+      "best_params": {
+        "C": 100
+      },
+      "cv_f1_macro": 0.9021,
+      "test_accuracy": 0.9159,
+      "test_precision": 0.9222,
+      "test_recall": 0.9159,
+      "test_f1": 0.9158,
+      "test_roc_auc": 0.9982
+    },
+    "KNN": {
+      "best_params": {
+        "n_neighbors": 15,
+        "weights": "distance"
+      },
+      "cv_f1_macro": 0.871,
+      "test_accuracy": 0.8841,
+      "test_precision": 0.8893,
+      "test_recall": 0.8841,
+      "test_f1": 0.884,
+      "test_roc_auc": 0.9913
+    },
+    "Decision Tree": {
+      "best_params": {
+        "max_depth": 12,
+        "min_samples_leaf": 1
+      },
+      "cv_f1_macro": 0.8258,
+      "test_accuracy": 0.8364,
+      "test_precision": 0.8467,
+      "test_recall": 0.8364,
+      "test_f1": 0.8369,
+      "test_roc_auc": 0.9286
+    }
+  },
+  "selected": "Logistic Regression",
+  "error_analysis": {
+    "n_test": 440,
+    "n_errors": 37,
+    "top_confusions": {
+      "grapes->apple": 6,
+      "rice->jute": 5,
+      "cotton->maize": 3,
+      "watermelon->muskmelon": 3,
+      "jute->rice": 2,
+      "mungbean->mothbeans": 2,
+      "lentil->mothbeans": 2,
+      "apple->papaya": 1
+    },
+    "weakest_classes": {
+      "jute": 0.732,
+      "rice": 0.778,
+      "mothbeans": 0.818,
+      "grapes": 0.824,
+      "apple": 0.844
+    },
+    "mean_confidence_correct": 0.937,
+    "mean_confidence_wrong": 0.667,
+    "cv_accuracy_mean_std_full_data": [
+      0.91,
+      0.0086
+    ]
+  },
+  "importance": {
+    "ph": 0.017,
+    "temperature": 0.1713,
+    "K": 0.2283,
+    "rainfall": 0.2622,
+    "P": 0.2867,
+    "humidity": 0.331,
+    "N": 0.3334
+  }
+}
