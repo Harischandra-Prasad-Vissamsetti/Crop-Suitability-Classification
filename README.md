@@ -45,29 +45,42 @@ License: The dataset is the Crop Recommendation Dataset by Atharva Ingle, obtain
 ## 📁 Project Structure
 
 ```
-crop_capstone/
+crop-suitability/
 ├── app/
-│   └── streamlit_app.py        # Streamlit web application
+│   └── streamlit_app.py            # Streamlit web application
 ├── data/
-│   └── crop_data.csv           # Kaggle Crop Recommendation Dataset
+│   ├── crop_data.csv               # Kaggle Crop Recommendation Dataset
+│   └── DATA_LICENSE.txt            # Apache 2.0 license for the dataset
 ├── models/
-│   ├── crop_model.joblib       # Trained pipeline (impute -> scale -> model)
-│   └── metadata.json           # Classes, feature ranges, model info
+│   ├── crop_model.joblib           # Trained pipeline (impute -> scale -> model)
+│   └── metadata.json               # Classes, feature ranges, model info
 ├── notebooks/
-│   ├── crop_suitability.ipynb  # Notebook version of the analysis (data, EDA, models, evaluation)
-│   └── colab_run.ipynb         # Colab runner (runs the scripts and shows results) 
+│   ├── crop_suitability.ipynb      # Analysis notebook (EDA, models, evaluation)
+│   └── colab_run.ipynb             # Colab runner (runs the scripts, shows results)
 ├── reports/
-│   ├── figures/                # EDA and evaluation charts
-│   ├── metrics.json            # All metrics
+│   ├── figures/
+│   │   ├── 01_class_balance.png
+│   │   ├── 02_missing.png
+│   │   ├── 03_distributions.png
+│   │   ├── 04_outliers_raw.png
+│   │   ├── 05_correlation.png
+│   │   ├── 06_crop_profiles.png
+│   │   ├── 07_features_by_crop.png
+│   │   ├── 08_model_comparison.png
+│   │   ├── 09_confusion_matrix.png
+│   │   └── 10_feature_importance.png
 │   ├── classification_report.txt
 │   ├── eda_summary.txt
-│   
+│   └── metrics.json
 ├── src/
-│   ├── preprocessing.py        # Shared cleaning + pipeline (training and app)
-│   ├── eda.py                  # Exploratory data analysis
-│   └── train.py                # Tuning, evaluation, error analysis, model saving
-├── requirements.txt
-└── README.md
+│   ├── eda.py                      # Exploratory data analysis
+│   ├── preprocessing.py            # Shared cleaning + pipeline (training and app)
+│   └── train.py                    # Tuning, evaluation, model saving
+├── .gitattributes                  # Makes GitHub show Python as the main language
+├── .gitignore                      # Files Git should ignore
+├── LICENSE                         # License for your own code (e.g. MIT)
+├── README.md                       # Project documentation
+└── requirements.txt                # Python packages
 ```
 
 ## 🔬 Methodology
