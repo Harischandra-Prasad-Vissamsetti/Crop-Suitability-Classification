@@ -103,6 +103,9 @@ crop-suitability/
 
 Charts and per-crop details are in `reports/`.
 
+## Error analysis:
+7 of the 440 test samples (1.6%) were misclassified. The most frequent confusion was rice predicted as jute (3 cases); the other errors were single cases between similar crops (lentil and moth beans, maize and cotton, pigeon peas and black gram). The model's mean confidence was 0.98 on correct predictions and 0.61 on wrong ones, so low confidence is a useful warning sign. Five-fold cross-validated accuracy on all data was 0.981 ± 0.004, consistent with the test result.
+
 ---
 
 ## 💻 Run in VS Code
@@ -148,7 +151,7 @@ streamlit run app/streamlit_app.py
 ```
 Open http://localhost:8501 if the browser does not open automatically.
 
-**6. Notebook (optional):** open `notebooks/crop_suitability.ipynb`, select the `.venv` kernel and click **Run All**.
+**6. Notebook (optional):** open `notebooks/crop_suitability.ipynb`, select the `.venv` kernel and click **Run All**.Run steps 4 first if you also want the saved model and report files.
 
 ---
 
@@ -257,7 +260,8 @@ Live weather API integration, CSV batch predictions, ensemble models (Random For
 
 ## 📄 License and Credits
 
-Educational capstone project. The dataset belongs to its original author on Kaggle; check its license before redistributing the raw file.
+Educational capstone project.
+Dataset: Crop Recommendation Dataset by Atharva Ingle (Kaggle), distributed under the Apache License 2.0 (see data/DATA_LICENSE.txt).
 
 © 2026 Harischandra Prasad Vissamsetti, M.C.A
 
