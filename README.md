@@ -2,9 +2,9 @@
 
 A multi-class machine-learning project that predicts the most suitable crop (22 classes) from soil nutrients, soil pH and climatic conditions, with an interactive Streamlit web application.
 
-**Author:**        Harischandra Prasad Vissamsetti, M.C.A
-**Program:**       Final Capstone Project (Track-1)
-**Project Name:**  Crop Suitability Classification System
+**Author:**        Harischandra Prasad Vissamsetti, M.C.A  
+**Program:**       Final Capstone Project (Track-1)  
+**Project Name:**  Crop Suitability Classification System  
 
 ---
 
@@ -45,7 +45,7 @@ License: The dataset is the Crop Recommendation Dataset by Atharva Ingle, obtain
 ## 📁 Project Structure
 
 ```
-crop-suitability/
+Crop-Suitability-Classification/
 ├── app/
 │   └── streamlit_app.py            # Streamlit web application
 ├── data/
@@ -99,11 +99,11 @@ crop-suitability/
 |---|---|---|---|
 | **Logistic Regression (selected)** | **98.4%** | **0.984** | **0.9999** |
 | KNN | 98.2% | 0.982 | 0.9987 |
-| Decision Tree | 97.9% | 0.979 | 0.9893 |
+| Decision Tree | 98.0% | 0.979 | 0.9893 |
 
 Charts and per-crop details are in `reports/`.
 
-## Error analysis:
+### Error analysis
 7 of the 440 test samples (1.6%) were misclassified. The most frequent confusion was rice predicted as jute (3 cases); the other errors were single cases between similar crops (lentil and moth beans, maize and cotton, pigeon peas and black gram). The model's mean confidence was 0.98 on correct predictions and 0.61 on wrong ones, so low confidence is a useful warning sign. Five-fold cross-validated accuracy on all data was 0.981 ± 0.004, consistent with the test result.
 
 ---
@@ -115,7 +115,7 @@ Charts and per-crop details are in `reports/`.
 **1. Get the project**
 ```bash
 git clone  https://github.com/Harischandra-Prasad-Vissamsetti/Crop-Suitability-Classification.git
-cd <Crop-Suitability-Classification>
+cd Crop-Suitability-Classification
 ```
 Open the folder in VS Code (**File → Open Folder**). It must be the project root.
 
@@ -151,7 +151,7 @@ streamlit run app/streamlit_app.py
 ```
 Open http://localhost:8501 if the browser does not open automatically.
 
-**6. Notebook (optional):** open `notebooks/crop_suitability.ipynb`, select the `.venv` kernel and click **Run All**.Run steps 4 first if you also want the saved model and report files.
+**6. Notebook (optional):** open `notebooks/crop_suitability.ipynb`, select the `.venv` kernel and click **Run All**. Run step 4 first if you also want the saved model and report files.
 
 ---
 
@@ -159,17 +159,13 @@ Open http://localhost:8501 if the browser does not open automatically.
 
 **1. Open a notebook** at https://colab.research.google.com and click **New notebook**.
 
-**2. Get the project** (choose one)
+**2. Get the project**
 ```python
-# Option A: clone from GitHub
 !git clone https://github.com/Harischandra-Prasad-Vissamsetti/Crop-Suitability-Classification.git
-%cd <Crop-Suitability-Classification>
+%cd Crop-Suitability-Classification
 ```
-or upload `crop_capstone.zip` using the Files panel and run:
-```python
-!unzip -q crop_capstone.zip
-%cd crop_capstone
-```
+Or open notebooks/colab_run.ipynb from the repository in Colab (File → Open notebook → GitHub), set REPO_URL in its first cell and run all cells; it performs every step below.
+
 
 **3. Install Streamlit** (other libraries are already in Colab)
 ```python
@@ -260,8 +256,8 @@ Live weather API integration, CSV batch predictions, ensemble models (Random For
 
 ## 📄 License and Credits
 
-Educational capstone project.
-Dataset: Crop Recommendation Dataset by Atharva Ingle (Kaggle), distributed under the Apache License 2.0 (see data/DATA_LICENSE.txt).
+- Code: MIT License (see `LICENSE`).
+- Dataset: *Crop Recommendation Dataset* by Atharva Ingle (Kaggle), Apache License 2.0 (see `data/DATA_LICENSE.txt`).
 
 © 2026 Harischandra Prasad Vissamsetti, M.C.A
 
