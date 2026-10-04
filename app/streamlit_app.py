@@ -7,7 +7,7 @@ import joblib, numpy as np, pandas as pd, streamlit as st
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
-from preprocessing import FEATURES, VALID_RANGES, UNITS   # identical to training
+from preprocessing import FEATURES, VALID_RANGES, UNITS   # type: ignore
 
 st.set_page_config(page_title="Crop Suitability Classification", page_icon="🌾", layout="wide")
 
@@ -45,7 +45,7 @@ NAMES = {"kidneybeans": "Kidney Beans", "pigeonpeas": "Pigeon Peas", "mothbeans"
 disp = lambda c: NAMES.get(c, c.title())
 
 st.markdown(f"""<div class="hero"><h1>🌾 Crop Suitability Assessment System</h1>
-<p>Data-driven crop recommendation based on soil nutrient and climatic conditions</p><p style="font-size:.85rem;opacity:.8;margin-top:10px; margin-left:18px" > ~ Developed by Harischandra Prasad Vissamsetti, M.C.A</p></div>""",
+<p>Data-driven crop recommendation based on soil nutrient and climatic conditions</p><p style="font-size:.85rem;opacity:.8;margin-top:10px; margin-left:18px" > Developed by Harischandra Prasad Vissamsetti, M.C.A</p></div>""",
             unsafe_allow_html=True)
 
 # ---------------- Sidebar inputs ----------------
@@ -66,7 +66,7 @@ st.sidebar.subheader("Climatic Conditions")
 vals["temperature"] = field("temperature", "Temperature", 0.1)
 vals["humidity"] = field("humidity", "Relative Humidity", 1.0)
 vals["rainfall"] = field("rainfall", "Rainfall", 1.0)
-run = st.sidebar.button("Access Crop Suitability", type="primary", use_container_width=True)
+run = st.sidebar.button("Assess Crop Suitability", type="primary", use_container_width=True)
 
 # ---------------- Results ----------------
 if run:
@@ -129,5 +129,5 @@ if mfile.exists():
 
 n_rec = f" · {meta['n_records']:,} training records" if meta.get("n_records") else ""
 st.markdown(f"""<div class="foot">Model: {meta['selected_model']} · {len(meta['classes'])} crop classes{n_rec}<br>
-This tool provides data-driven estimates intended to support, not replace, professional agronomic advice.<br> <center> Harischandra Prasad Vissamsetti, M.C.A © · 2025 </center> </div>""",
+This tool provides data-driven estimates intended to support, not replace, professional agronomic advice.<br> <center>© 2026 Harischandra Prasad Vissamsetti, M.C.A</center> </div>""",
             unsafe_allow_html=True)
